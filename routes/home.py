@@ -1,6 +1,7 @@
 from flask import Blueprint,render_template,redirect,url_for
 from models.databases import ExampleDatabase
 from utils.db import db
+from decorators.flaskDecorators import fuckIt
 
 Home = Blueprint("Home",__name__)
 
