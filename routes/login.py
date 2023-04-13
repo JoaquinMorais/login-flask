@@ -71,3 +71,10 @@ def singin():
 
     flash('')
     return render_template("login/singin.html")
+
+
+@Login.route("/logout")
+def logout():
+    session.pop('user_id',None)
+
+    return redirect(url_for('Login.singin'))
